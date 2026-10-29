@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using GameStore.Models;
 namespace GameStore.Services;
 
@@ -95,8 +96,15 @@ public class GameService
             Price = 19.99m,
             ReleaseDate = new DateOnly(2011, 11, 15),
             Developer = "Electronic Arts"
-        },
-
-        
+        }
     };
+
+    public List<Game> GetGames(){
+            return games;
+        }
+    
+    public Game? GetGameById(int id)
+    {
+        return games.FirstOrDefault(g => g.Id == id);
+    }
 }
