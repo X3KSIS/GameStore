@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kBdM3E+sLCY=",
+  "success": true,
+  "projectFilePath": "/home/bangi18/Desktop/Blazor Apps/GameStore/GameStore.csproj",
+  "expectedPackageFiles": [
+    "/home/bangi18/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.13/microsoft.aspnetcore.app.internal.assets.10.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
