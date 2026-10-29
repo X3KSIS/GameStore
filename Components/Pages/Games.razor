@@ -1,0 +1,43 @@
+
+@page "/games"
+@using GameStore.Models
+@using GameStore.Services
+@inject GameService GameService
+
+<PageTitle>GameStore - Games</PageTitle>
+
+<h1>GameStore</h1>
+
+<h2>Available Games</h2>
+
+<p>Total games: @GameService.GetAll().Count</p>
+
+@if (GameService.GetAll().Count == 0)
+{
+    <p>No games are currently available.</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Genre</th>
+                <th>Price</th>
+                <th>Developer</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Game game in GameService.GetAll())
+            {
+                <tr>
+                    <td>@game.Name</td>
+                    <td>@game.Genre</td>
+                    <td>@game.Price.ToString("C")</td>
+                    <td>@game.Developer</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

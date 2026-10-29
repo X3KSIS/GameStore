@@ -36,3 +36,4 @@
 /home/bangi18/Desktop/Blazor Apps/GameStore/obj/Debug/net10.0/GameStore.pdb
 /home/bangi18/Desktop/Blazor Apps/GameStore/obj/Debug/net10.0/GameStore.genruntimeconfig.cache
 /home/bangi18/Desktop/Blazor Apps/GameStore/obj/Debug/net10.0/ref/GameStore.dll
+/home/bangi18/Desktop/Blazor Apps/GameStore/obj/Debug/net10.0/GameStore.sourcelink.json

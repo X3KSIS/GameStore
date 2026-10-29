@@ -20,7 +20,7 @@ public class GameService
         {
             Id = 2,
             Name = "God Of War Ragnarok",
-            Genre = "ACtion RPG(Role Playing Game)",
+            Genre = "Action RPG(Role Playing Game)",
             Price = 70.00m,
             ReleaseDate = new DateOnly(2022, 11, 9),
             Developer = "Santa Monica Studio"
@@ -99,7 +99,7 @@ public class GameService
         }
     };
 
-    public List<Game> GetGames(){
+    public List<Game> GetAll(){
             return games;
         }
     
@@ -107,4 +107,6 @@ public class GameService
     {
         return games.FirstOrDefault(g => g.Id == id);
     }
+
+    public int GameCount => games.Count;
 }

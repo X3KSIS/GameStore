@@ -1,10 +1,12 @@
 using GameStore.Components;
+using GameStore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents();
 
+builder.Services.AddSingleton<GameService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
